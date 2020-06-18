@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Tourismms.html">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<style type="text/css">
+		/*--------------------------------------Navbar----------------------*/
+		#menubar
+		{
+			top: 0%;
+			position: sticky;
+			z-index: 10;
+		}
+		.navbar
+		{
+			background: linear-gradient(blue,black);
+		}
+		.navbar .fa
+		{
+			border-radius: 50%;
+			background-color: blue;
+			animation: globe 2s linear infinite;
+		}
+		@keyframes globe
+		{
+			0%
+			{
+				transform: rotate(0deg) scale(1.7);
+			}
+			100%
+			{
+				transform: rotate(360deg) scale(1.7);
+			}
+		}
+		.navbar-brand img
+		{
+			height: 40px;
+            padding-left: 30px;
+            border-radius: 50%;
+		}
+		#menubar li a
+		{
+			border-radius: 12px;
+			transition: 1s;
+			padding: 2px 15px;
+			transition: .5s;
+		}
+		#menubar li a:hover
+		{
+			background-color: white;
+			color: blue;
+			border-radius: 25px;
+			box-shadow: 0px 0px 12px 7px rgba(255,255,255,0.5); 
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+		/*-----------------------------Header img-----------------------*/
+		.jumbotron
+		{
+			background-image: url(Maldives/mald.jpg);
+			background-size: cover;
+			height: 40vh;
+			padding-top: 5%;
+		}
+
+		.jumbotron .container
+		{
+			background-color: transparent;
+			width: 30%;
+			box-shadow: 0px 0px 12px 7px rgba(255,255,255,0.9);
+			border-radius: 25px;
+		}
+		.jumbotron .container h1
+		{
+			color: white;
+			font-weight: bold;
+			padding-bottom: 12px;
+			text-shadow: 1px 1px 1px black,
+					1px 2px 1px black,
+					1px 3px 1px black,
+					1px 4px 1px black,
+					1px 5px 1px black,
+					1px 6px 1px black,
+					1px 7px 1px black,
+					1px 8px 1px black,
+					1px 9px 1px black;
+		}
+/*-------------------------Booking-------------------*/
+		#Bookingflight
+		{
+			margin-top: -2.5%;
+			background: linear-gradient(blue,black);
+			padding-bottom: 5%;
+		}
+		#Bookingflight .na input[type="text"]
+		{
+			width: 270px;
+			border-radius: 12px;
+			height: 6vh;
+			outline: none;
+			font-weight: bold;
+			font-style: italic;
+		}
+		#Bookingflight .nam input[type="text"]
+		{
+			width: 270px;
+			border-radius: 12px;
+			height: 6vh;
+			outline: none;
+			font-weight: bold;
+			font-style: italic;
+		}
+		#Bookingflight .na label
+		{
+			color: yellow;
+			font-weight: bold;
+		}
+		#Bookingflight .nam label
+		{
+			color: yellow;
+			font-weight: bold;
+		}
+		#Bookingflight .em input[type="email"]
+		{
+			width: 270px;
+			border-radius: 12px;
+			height: 6vh;
+			outline: none;
+			font-weight: bold;
+			font-style: italic;
+		}
+		#Bookingflight .em label
+		{
+			color: yellow;
+			font-weight: bold;
+		}
+		#Bookingflight .num input[type="number"]
+		{
+			width: 270px;
+			border-radius: 12px;
+			height: 6vh;
+			outline: none;
+			font-weight: bold;
+			font-style: italic;
+		}
+		#Bookingflight .num label
+		{
+			color: yellow;
+			font-weight: bold;
+		}
+		/*---------------Social Media-------------*/
+		#Social
+		{
+			color: white;
+		}
+		#Social .col-md-3
+		{
+			margin-top: 5%;
+		}
+		#Social .col-md-3 h1
+		{
+			color: white;
+			font-size: 15px;
+			text-align: left;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			text-shadow: 1px 1px 1px black,
+					1px 2px 1px black,
+					1px 3px 1px black,
+					1px 4px 1px black,
+					1px 5px 1px black,
+					1px 6px 1px black,
+					1px 7px 1px black,
+					1px 8px 1px black,
+					1px 9px 1px black;
+		}
+		#Social .noida
+		{
+			color: white;
+			margin-left: 35px;
+		}
+		#Social .fa
+		{
+			color: white;
+			padding: 8px 8px;
+			font-size: 25px;
+			border: 3px solid;
+			border-radius: 12px;
+			background-color: ;
+			transition: 1s;
+		}
+		#Social .fa:hover
+		{
+			transform: scale(1.1);
+		}
+		#Social p
+		{
+			margin-left: 25px;
+			color: white;
+			text-shadow: 1px 1px 1px black,
+					1px 2px 1px black,
+					1px 3px 1px black,
+					1px 4px 1px black,
+					1px 5px 1px black,
+					1px 6px 1px black,
+					1px 7px 1px black,
+					1px 8px 1px black,
+					1px 9px 1px black;
+		}
+		#Social .box
+		{
+			margin-top: 13%;
+			background-color: gold;
+			height: 20vh;
+			max-width: 70%;
+			border-radius: 25px;
+			box-shadow: 7px 12px 3px 3px rgba(0,0,0,0.9); 
+
+		}
+		#Social .box h1
+		{
+			color: white;
+			text-decoration-line: ;
+			border-radius: 25px;
+			font-size: 30px;
+			padding-top: 45px;
+			font-weight: bold;
+			padding-top: ;
+			text-align: center;
+			text-shadow: 1px 1px 1px black,
+					1px 2px 1px black,
+					1px 3px 1px black,
+					1px 4px 1px black,
+					1px 5px 1px black,
+					1px 6px 1px black,
+					1px 7px 1px black,
+					1px 8px 1px black,
+					1px 9px 1px black;
+			animation: anim 2s linear infinite;		
+		}
+		@keyframes anim
+		{
+			0%
+			{
+				transform: scale(1.1);
+			}
+			50%
+			{
+				transform: scale(1.3);
+			}
+			100%
+			{
+				transform: scale(1.1);
+			}
+		}
+	</style>
+</head>
+<body>
+	<!------------------------------------Navbar--------------------------->
+	<section id="menubar">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="Tourismms.html">TR   <i class="fa fa-globe" aria-hidden="true"></i>  VEL
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="Tourismms.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Abouttms.html">About</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Logintms.html">Login</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Contacttvm.html">Contact</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Booking.html">Booking</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Gallerytms.html">Gallery</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0 scale(0.8)" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <!------------------------Header------------------>
+	<div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    		<h1 class="display-4 text-center">Maldives</h1>
+  		</div>
+  		<h1 style="margin-left: 20%;margin-top: 7%;background-color: yellow;max-width: 23%;padding: 5px 9px;border-radius: 12px;color: blue">Personal Details</h1>
+	</div>
+	</section>
+	<!--------------------------------Booking flight------------------------>
+<section id="Bookingflight">
+
+	<div class="container">
+		<div class="row">
+			<div class="book col-md-6">
+				<br>
+				<form>
+					<div class="row">
+						<div class="na col-md-6" style="padding-top: 5%;">
+							<label for="name">First Name</label><br>
+							<input id="name" type="text" name="Name" required>
+						</div>
+						<div class="nam col-md-6" style="padding-top: 5%;">
+							<label for="name">Last Name</label><br>
+							<input id="name" type="text" name="Name" required>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="em col-md-6">
+							<label for="email">Email</label><br>
+							<input id="email" type="email" name="Email" required>
+						</div>
+						<div class="num col-md-6">
+							<label for="numm">Mobile No.</label><br>
+							<input id="numm" type="number" name="num" required>
+						</div>
+					</div>
+					<br><br>
+					<button class="btn btn-primary btn-lg"><a href="Bookingsuccess.html" style="text-decoration: none;color: white;font-weight: bold;">Book Now | $450</a></button>
+				</form>
+			</div>
+			<div class="img col-md-6">
+				<img src="Maldives/mald1.jpg" style="margin-top: 2%;border-radius: 12px;height: 50vh;margin-left: 14%;">
+			</div>
+		</div>
+	</div>
+</section>
+<!-----------------Social Media----------------->
+   <section id="Social" style="background: linear-gradient(blue,black); border: 5px solid white;padding-bottom: 20px;">
+    <div class="container">
+      <div class="row">
+      	<div class="col-md-6">
+      		<div class="box">
+      			<h1>Get in touch</h1>
+      		</div>
+        </div>
+        <div class="col-md-3">
+          <p style="font-size: 20px"><a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>facebook</p>
+          <p style="font-size: 20px"><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>instagram</p>
+          <p style="font-size: 20px"><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>twitter</p>
+        </div>
+        <div class="col-md-3">
+          <p style="font-size: 20px"><i class="fa fa-phone-square"></i> +91 8800563204 </p>
+          <p style="font-size: 20px"><i class="fa fa-envelope"></i> xyz@ABC.com</p>
+          <p style="font-size: 20px"><a href="https://www.kccitm.college/#contact"><i class="fa fa-address-card"></i></a> KCC,knowledge park III,2B-2C,Greater Noida,India</p>
+        </div>
+      </div>
+    </div>
+   </section>					
+</body>
+</html>
